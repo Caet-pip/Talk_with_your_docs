@@ -11,7 +11,7 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 from haystack.nodes import PromptNode
 from getpass import getpass
 
-HF_TOKEN = "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"
+HF_TOKEN = "HF_TOKEN"
 
 
 def generate_response(question: str,context: str):
