@@ -1,5 +1,4 @@
 from flask import Flask, request, render_template, jsonify
-# from unstructured.partition.pdf import partition_pdf
 import re
 from chromadb.utils import embedding_functions
 import openai
@@ -15,7 +14,7 @@ HF_TOKEN = "HF_TOKEN"
 
 
 def generate_response(question: str,context: str):
-    pn = PromptNode(model_name_or_path="mistralai/Mistral-7B-Instruct-v0.1",  # instruct fine-tuned model: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1
+    pn = PromptNode(model_name_or_path="mistralai/Mistral-7B-Instruct-v0.1", 
                 max_length=800,
                 api_key=HF_TOKEN)
     
