@@ -11,5 +11,5 @@ Code can be edited to include an LLM and also other features. For my use case I 
 To start server: 
 
 1) Run infer.py
-2) Go to the webpage (in this case it is localhost:5050
+2) Go to the webpage (in this case it is localhost:5050)
 3) Run your query and retrieve in contect answer form the LLM
